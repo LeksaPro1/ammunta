@@ -5,7 +5,7 @@ using UnityEngine;
 public class zombie : MonoBehaviour
 {
 
-    public static float eteenpain_nopeus = 1.0f;
+    public float eteenpain_nopeus = 1.0f;
 
     string suunta = "eteenpain";
 
@@ -55,6 +55,15 @@ public class zombie : MonoBehaviour
         {
             horisontaalinenPyorinta += kaannos;
         }
+    }
+
+
+
+
+
+    public void stop_zombie_1()
+    {
+        eteenpain_nopeus = 0f;
     }
 
 

@@ -65,6 +65,7 @@ public class ammu : MonoBehaviour
             {
 
                 anim.SetBool("ammuttu", true);
+                hit.collider.gameObject.GetComponent<zombie>().eteenpain_nopeus = 0;
                }
 
             Rigidbody rb = hit.collider.gameObject.GetComponent<Rigidbody>();
