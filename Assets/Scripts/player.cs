@@ -92,15 +92,16 @@ public class player : MonoBehaviour
             anim.SetBool("Walk", true);
 			
 			if (Input.GetKeyDown("left shift"))
-			{
+			{   
 				anim.SetBool("Run", true);
+				speed = 10f;
 				anim.SetBool("Walk", false);
 			}
         }
         else
-        {
-            anim.SetBool("Walk", false);
+		{   anim.SetBool("Walk", false);
 			anim.SetBool("Run",false);
+			speed = 5f;
         }
 
     }
